@@ -57,20 +57,11 @@ terraform destroy
 ## Project Structure
 ```
 ├── main.py                 # Main execution script
-├── user_input.py           # Handles user input
-├── terraform_generator.py  # Generates Terraform files
-├── terraform_runner.py     # Executes Terraform commands
-├── aws_validator.py        # Validates AWS resources
-├── terraform_cleanup.py    # Handles infrastructure cleanup
+├── user_input.py           # Prompt user for cloud deployment configurations
+├── terraform_generator.py  # Generate Terraform file from Jinja2 template
+├── terraform_actions.py    # Run terraform commands (init --> plan --> apply)
+├── aws_validator.py        # Validate EC2 instance and ALB using boto3
 ├── requirements.txt        # Required Python packages
 ├── aws_validation.json     # Stores AWS validation results
-└── README.md               # Project documentation
 ```
-
-## Error Handling
-- Handles invalid AWS regions, Terraform execution failures, and AWS API errors.
-- Uses `try-except` blocks for better reliability.
-
-## License
-This project is open-source and available under the MIT License.
 
