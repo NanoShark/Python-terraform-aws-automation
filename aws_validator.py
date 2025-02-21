@@ -1,5 +1,6 @@
 import json
 import boto3
+import os
 
 
 def fetch_aws_details()-> None:
@@ -26,8 +27,9 @@ def fetch_aws_details()-> None:
             "public_ip": public_ip,
             "load_balancer_dns": lb_dns
         }
-        
-        with open("aws_validation.json", "w") as json_file:
+
+        output_path = os.path.join(os.path.dirname(__file__), "aws_validation.json")
+        with open(output_path, "w") as json_file:
             json.dump(validation_data, json_file)
         
         return validation_data
