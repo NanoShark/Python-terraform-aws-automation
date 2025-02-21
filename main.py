@@ -15,12 +15,12 @@ def main() -> None:
 
     config = get_user_inputs()
     generate_terraform_file(config)
-    run_terraform()
-    fetch_aws_details()
+    # run_terraform()
+    # fetch_aws_details()
     
-    choice = input("Do you want to destroy the infrastructure? (yes/no): ").strip().lower()
-    if choice == "yes":
-         destroy_infrastructure()
+    # choice = input("Do you want to destroy the infrastructure? (yes/no): ").strip().lower()
+    # if choice == "yes":
+    #      destroy_infrastructure()
 
 if __name__ == "__main__":
     main()
