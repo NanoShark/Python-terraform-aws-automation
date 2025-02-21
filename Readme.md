@@ -59,16 +59,18 @@ terraform destroy
 ├── main.py                 # Main execution script
 ├── user_input.py           # Handles user input
 ├── terraform_generator.py  # Generates Terraform files
-├── terraform_actions.py    # Executes Terraform commands
+├── terraform_runner.py     # Executes Terraform commands
 ├── aws_validator.py        # Validates AWS resources
+├── terraform_cleanup.py    # Handles infrastructure cleanup
 ├── requirements.txt        # Required Python packages
 ├── aws_validation.json     # Stores AWS validation results
-├── test_mock.py            # Contains test files
 └── README.md               # Project documentation
 ```
 
-## Testing with Mock AWS Data
-To test the AWS validation process without actual AWS credentials, a mock file is included in `test_mock.py`. This file simulates AWS responses for EC2 and Load Balancer instances.
+## Error Handling
+- Handles invalid AWS regions, Terraform execution failures, and AWS API errors.
+- Uses `try-except` blocks for better reliability.
 
-
+## License
+This project is open-source and available under the MIT License.
 
