@@ -63,7 +63,7 @@ terraform destroy
 ├── aws_validator.py        # Validates AWS resources
 ├── requirements.txt        # Required Python packages
 ├── aws_validation.json     # Stores AWS validation results
-├── test_mock.py            # Stores AWS validation results
+├── test_mock.py            # Test Aws validation
 └── README.md               # Project documentation
 ```
 
