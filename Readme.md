@@ -59,11 +59,11 @@ terraform destroy
 ├── main.py                 # Main execution script
 ├── user_input.py           # Handles user input
 ├── terraform_generator.py  # Generates Terraform files
-├── terraform_runner.py     # Executes Terraform commands
+├── terraform_actions.py    # Executes Terraform commands
 ├── aws_validator.py        # Validates AWS resources
-├── terraform_cleanup.py    # Handles infrastructure cleanup
 ├── requirements.txt        # Required Python packages
 ├── aws_validation.json     # Stores AWS validation results
+├── test_mock.py            # Stores AWS validation results
 └── README.md               # Project documentation
 ```
 
