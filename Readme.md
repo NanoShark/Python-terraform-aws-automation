@@ -70,6 +70,4 @@ terraform destroy
 - Handles invalid AWS regions, Terraform execution failures, and AWS API errors.
 - Uses `try-except` blocks for better reliability.
 
-## License
-This project is open-source and available under the MIT License.
 
